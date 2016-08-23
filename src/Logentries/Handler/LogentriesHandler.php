@@ -25,7 +25,7 @@ class LogentriesHandler extends AbstractProcessingHandler
 
 		if ( ! $this->socket)
 		{
-			$this->socket = new Socket('data.logentries.com', 80);
+			$this->socket = new Socket('data.logentries.com', 514);
 		}
 
 		parent::__construct($level, $bubble);
